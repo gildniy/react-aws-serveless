@@ -1,0 +1,64 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-react-aws-serveless-dev-103820-authRole",
+			"UnauthRoleArn": "arn:aws:iam::143688786007:role/amplify-react-aws-serveless-dev-103820-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::143688786007:role/amplify-react-aws-serveless-dev-103820-authRole",
+			"Region": "eu-west-2",
+			"DeploymentBucketName": "amplify-react-aws-serveless-dev-103820-deployment",
+			"UnauthRoleName": "amplify-react-aws-serveless-dev-103820-unauthRole",
+			"StackName": "amplify-react-aws-serveless-dev-103820",
+			"StackId": "arn:aws:cloudformation:eu-west-2:143688786007:stack/amplify-react-aws-serveless-dev-103820/4c7bfb60-95be-11ea-9a14-021679f87d94",
+			"AmplifyAppId": "d8j1tyhginetv"
+		}
+	},
+	"api": {
+		"reactAwsServeless": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "API_KEY",
+						"apiKeyConfig": {
+							"description": "",
+							"apiKeyExpirationDays": "365"
+						}
+					}
+				},
+				"GraphQLAPIIdOutput": "xxc4ym2f6zak7p6d2ifwaz5bse",
+				"GraphQLAPIEndpointOutput": "https://v4ngpupzgffdpdejyxb3ruffea.appsync-api.eu-west-2.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-bzalp6ck2bhepfss5sahtq62rq"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-react-aws-serveless-dev-103820-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apireactAwsServeless"
+			},
+			"lastPushTimeStamp": "2020-05-14T23:38:35.143Z",
+			"lastPushDirHash": "zqcxzLIaekkrURFDsmVUOqjbjSk="
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-react-aws-serveless-dev-103820-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2020-05-14T23:38:35.149Z",
+			"output": {
+				"CloudFrontSecureURL": "https://d38npktnnhv0q4.cloudfront.net",
+				"S3BucketSecureURL": "https://react-aws-serveless-20200515013106-hostingbucket-dev.s3.amazonaws.com",
+				"CloudFrontOriginAccessIdentity": "EIZHP48OX2WN9",
+				"WebsiteURL": "http://react-aws-serveless-20200515013106-hostingbucket-dev.s3-website.eu-west-2.amazonaws.com",
+				"CloudFrontDistributionID": "E1UZXKA8L1PXNR",
+				"Region": "eu-west-2",
+				"HostingBucketName": "react-aws-serveless-20200515013106-hostingbucket-dev",
+				"CloudFrontDomainName": "d38npktnnhv0q4.cloudfront.net"
+			},
+			"lastPushDirHash": "wrNcurhbgiaGd85ZnceXe6wk+8M="
+		}
+	}
+}
